@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://cxtjlyc1r3ol"]
+
+[ext_resource type="Script" uid="uid://bh4bbcu2smyom" path="res://world.gd" id="1_f3sb7"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_rujv5"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gv5m4"]
+albedo_color = Color(0, 0.75, 1, 0.13333334)
+metallic = 0.5
+metallic_specular = 1.0
+roughness = 0.0
+refraction_enabled = true
+refraction_scale = 0.15
+
+[sub_resource type="BoxMesh" id="BoxMesh_8ccjp"]
+
+[node name="World" type="Node3D" unique_id=994369468]
+script = ExtResource("1_f3sb7")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1810462897]
+mesh = SubResource("SphereMesh_rujv5")
+surface_material_override/0 = SubResource("StandardMaterial3D_gv5m4")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=451212869]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.7660892)
+mesh = SubResource("BoxMesh_8ccjp")

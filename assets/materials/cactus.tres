@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MaterialType" format=3 uid="uid://ceex5uxkuay6t"]
+
+[ext_resource type="Script" uid="uid://dsa6srqh7t0cd" path="res://material.gd" id="1_0wyke"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7x6pw"]
+albedo_color = Color(0.2509804, 0.5019608, 0.1882353, 1)
+
+[resource]
+script = ExtResource("1_0wyke")
+power = 5
+weight = 0.8
+strength = 20
+allowed_processes = Array[String](["cutting", "construction"])
+effects = Dictionary[String, float]({
+"spiky": 1.0
+})
+material = SubResource("StandardMaterial3D_7x6pw")
+metadata/_custom_type_script = "uid://dsa6srqh7t0cd"

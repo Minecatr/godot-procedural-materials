@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialType" format=3 uid="uid://dnted0knliae8"]
+
+[ext_resource type="Script" uid="uid://dsa6srqh7t0cd" path="res://material.gd" id="1_py6sj"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_py6sj"]
+albedo_color = Color(0, 0.31, 0.21699995, 0.11764706)
+roughness = 0.1
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vyo03"]
+albedo_color = Color(1, 0.88235295, 0.6392157, 1)
+
+[resource]
+script = ExtResource("1_py6sj")
+power = 20
+weight = 2.0
+strength = 5
+allowed_processes = Array[String](["construction"])
+material = SubResource("StandardMaterial3D_py6sj")
+raw_material = SubResource("StandardMaterial3D_vyo03")
+metadata/_custom_type_script = "uid://dsa6srqh7t0cd"

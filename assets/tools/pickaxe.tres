@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ToolType" format=3 uid="uid://k4b1quh8v6up"]
+
+[ext_resource type="Script" uid="uid://c4cacp1fx7moq" path="res://tool.gd" id="1_dvret"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8enhw"]
+size = Vector3(0.1, 0.1, 0.3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_dvret"]
+size = Vector3(0.1, 0.1, 0.3)
+
+[resource]
+script = ExtResource("1_dvret")
+mine_factor = 1.0
+damage_factor = 0.5
+attack_speed_factor = 1.0
+reach_factor = 1.0
+mesh = SubResource("BoxMesh_dvret")
+hitbox = SubResource("BoxShape3D_8enhw")
+metadata/_custom_type_script = "uid://c4cacp1fx7moq"

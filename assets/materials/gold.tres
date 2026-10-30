@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MaterialType" format=3 uid="uid://jw660fwswfuy"]
+
+[ext_resource type="Script" uid="uid://dsa6srqh7t0cd" path="res://material.gd" id="1_civ4i"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_civ4i"]
+albedo_color = Color(1, 0.7529412, 0.2509804, 1)
+metallic = 1.0
+roughness = 0.3
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vyo03"]
+albedo_color = Color(1, 0.7529412, 0.2509804, 1)
+metallic = 0.9
+roughness = 0.7
+
+[resource]
+script = ExtResource("1_civ4i")
+power = 30
+weight = 2.0
+strength = 10
+allowed_processes = Array[String](["working", "construction"])
+material = SubResource("StandardMaterial3D_civ4i")
+raw_material = SubResource("StandardMaterial3D_vyo03")
+metadata/_custom_type_script = "uid://dsa6srqh7t0cd"

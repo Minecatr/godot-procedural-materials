@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MaterialType" format=3 uid="uid://dixe7hx4fc2k1"]
+
+[ext_resource type="Script" uid="uid://dsa6srqh7t0cd" path="res://material.gd" id="1_vwsbh"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7x6pw"]
+albedo_color = Color(0.7372549, 0.47058824, 0.28235295, 1)
+
+[resource]
+script = ExtResource("1_vwsbh")
+power = 5
+weight = 0.8
+strength = 20
+fuel = 1
+allowed_processes = Array[String](["cutting", "construction"])
+effects = Dictionary[String, float]({
+"regrowth": 1.0
+})
+material = SubResource("StandardMaterial3D_7x6pw")
+metadata/_custom_type_script = "uid://dsa6srqh7t0cd"

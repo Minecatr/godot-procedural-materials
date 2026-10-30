@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MaterialType" format=3 uid="uid://cwgw3i0uvogmo"]
+
+[ext_resource type="Script" uid="uid://dsa6srqh7t0cd" path="res://material.gd" id="1_bqkub"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bqkub"]
+albedo_color = Color(0, 0.75, 1, 0.13333334)
+metallic = 0.5
+metallic_specular = 1.0
+roughness = 0.0
+refraction_enabled = true
+refraction_scale = 0.15
+
+[resource]
+script = ExtResource("1_bqkub")
+power = 50
+strength = 50
+allowed_processes = Array[String](["working"])
+material = SubResource("StandardMaterial3D_bqkub")
+metadata/_custom_type_script = "uid://dsa6srqh7t0cd"

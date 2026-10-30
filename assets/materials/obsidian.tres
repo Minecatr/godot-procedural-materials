@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MaterialType" format=3 uid="uid://mjopng7ymcmh"]
+
+[ext_resource type="Script" uid="uid://dsa6srqh7t0cd" path="res://material.gd" id="1_42xlm"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_42xlm"]
+albedo_color = Color(0.035333328, 0, 0.04, 1)
+metallic = 1.0
+roughness = 0.1
+
+[resource]
+script = ExtResource("1_42xlm")
+power = 50
+strength = 30
+allowed_processes = Array[String](["working"])
+material = SubResource("StandardMaterial3D_42xlm")
+metadata/_custom_type_script = "uid://dsa6srqh7t0cd"
